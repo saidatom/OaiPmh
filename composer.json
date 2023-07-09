@@ -1,5 +1,5 @@
 {
-  "name": "picturae/oai-pmh",
+  "name": "saidatom/oai-pmh",
   "description": "Picturae OAI-PMH package. Can be used to create a OAI endpoint",
   "license": "GPL-3.0-or-later",
   "repositories": [
@@ -20,7 +20,7 @@
     }
   },
   "require": {
-    "psr/http-message": "^1.0",
+    "psr/http-message": "^1.0 || ^2.0",
     "guzzlehttp/psr7": "^1.2 || ^2.4"
   },
   "require-dev": {
