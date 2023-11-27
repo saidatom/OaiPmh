@@ -1,5 +1,5 @@
 {
-  "name": "saidatom/oai-pmh",
+  "name": "square-bit/oai-pmh",
   "description": "Picturae OAI-PMH package. Can be used to create a OAI endpoint",
   "license": "GPL-3.0-or-later",
   "repositories": [
