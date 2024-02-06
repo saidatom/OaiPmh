@@ -40,6 +40,7 @@ class MultipleExceptions extends Exception implements \IteratorAggregate
      * @return Traversable An instance of an object implementing <b>Iterator</b> or
      * <b>Traversable</b>
      */
+    #[\ReturnTypeWillChange]
     public function getIterator()
     {
         return new \ArrayIterator($this->exceptions);
