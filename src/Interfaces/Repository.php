@@ -28,7 +28,7 @@ interface Repository
      * @return string the base URL of the repository
      */
     public function getBaseUrl();
-    
+
     /**
      * @return string
      * the finest harvesting granularity supported by the repository. The legitimate values are
@@ -62,12 +62,12 @@ interface Repository
     /**
      * @param string $metadataFormat metadata format of the records to be fetch or null if only headers are fetched
      * (listIdentifiers)
-     * @param \DateTime $from
-     * @param \DateTime $until
+     * @param \DateTime|null $from
+     * @param \DateTime|null $until
      * @param string $set name of the set containing this record
      * @return RecordList
      */
-    public function listRecords($metadataFormat = null, \DateTime $from = null, \DateTime $until = null, $set = null);
+    public function listRecords($metadataFormat = null, ?\DateTime $from = null, ?\DateTime $until = null, $set = null);
 
     /**
      * @param string $token
@@ -76,7 +76,7 @@ interface Repository
     public function listRecordsByToken($token);
 
     /**
-     * @param string $identifier
+     * @param string|null $identifier
      * @return MetadataFormatType[]
      */
     public function listMetadataFormats($identifier = null);

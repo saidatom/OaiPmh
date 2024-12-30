@@ -92,7 +92,7 @@ class Provider
     private $params = [];
 
     /**
-     * @var ServerRequestInterface
+     * @var ServerRequestInterface|null
      */
     private $request;
 
@@ -103,9 +103,9 @@ class Provider
 
     /**
      * @param Repository $repository
-     * @param ServerRequestInterface $request
+     * @param ServerRequestInterface $request|null
      */
-    public function __construct(Repository $repository, ServerRequestInterface $request = null)
+    public function __construct(Repository $repository, ?ServerRequestInterface $request = null)
     {
         $this->repository = $repository;
 
